@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% block rss %}
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="{{ get_url(path="rss.xml", trailing_slash=false) }}">
+    {% endblock %}
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ config.title }}</title>
+    <link rel="stylesheet" href="{{ get_url(path="style.css", cachebust=true) }}" />
+    <link rel="shortcut icon" type="image/png" href="{{ get_url(path="favicon.png") }}"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ get_url(path="apple-touch-icon.png") }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ get_url(path="favicon-32x32.png") }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ get_url(path="favicon-16x16.png") }}">
+    <link rel="manifest" href="{{ get_url(path="site.webmanifest") }}">
+    <script
+      src="https://kit.fontawesome.com/93866eaaa9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+    <nav class="menu">
+      <div class="nav-left">
+        <ul>
+          <li>
+            <a href="/"
+              ><img class="logo" src="{{ get_url(path="favicon.ico") }}" alt="" /><span
+                class="sitename"
+                >{{ config.title | lower }}</span
+              ></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="nav-right">
+        <ul>
+        <li class="icons">
+            <a
+                title="RSS feed"
+              class="fas fa-rss"
+              href="{{ get_url(path="rss.xml", trailing_slash=false) }}"
+            ></a>
+            <a
+                title="Dark mode"
+              id="darkmodetoggle"
+              class="fas fa-moon"
+              onclick="switchTheme()"
+            ></a>
+        <a id="toggle-nav" onclick="toggleNav()">
+            <i class="fa fa-bars"></i>
+        </a>
+          </li>
+        </ul>
+        <ul id="links">
+          <li><a href="mailto:athaleaseem@gmail.com">contact</a></li>
+          <li><a target="_blank" href="https://github.com/mistersmee/">git</a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/aseem-athale-b81682234/">linkedin</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  <body>
+    <section class="section">
+      <div class="container">{% block content %} {% endblock %}</div>
+    </section>
+
+
+
+<footer>
+	<p>Powered by <a target="_blank" href="https://www.getzola.org/">Zola</a></p>
+</footer>
+<script src="{{ get_url(path="darktheme.js", cachebust=true) }}" crossorigin="anonymous"></script>
+<script src="{{ get_url(path="nav-toggle.js", cachebust=true) }}" crossorigin="anonymous"></script>
+
+  </body>
+
+
+</html>
