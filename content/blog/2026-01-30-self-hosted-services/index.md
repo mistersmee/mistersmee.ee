@@ -13,6 +13,8 @@ Wolfgang from Wolfgang's Channel, I've taken more of an inspiration from, *clear
 - [Microbin](https://microbin.mistersmee.ee), a pastebin.
 - [SearxNG](https://searx.mistersmee.ee), a metasearch engine.
 - A WireGuard tunnel, effectively making it a self-hosted private VPN I can use.
+- A Matrix homeserver, using Conduit, at [matrix.mistersmee.ee](matrix.mistersmee.ee). It's single-user, only for me, so don't try to join, please.
+- A coturn server, for Matrix and other services, probably.
 
 
 ## My considerations when choosing what to host
@@ -66,3 +68,8 @@ As for the rest of the self-hosting world, I'll keep looking for something that'
 
 
 Adieu for now!
+
+
+UPDATE 2026-01-31: Unfortunately, Lemmy is out because of similar reasons to Mastodon, it also requires an email server, so no cigar. Onwards to Matrix and their documentation.
+
+UPDATE 2026-01-31 2: Matrix is up! Ping me at `@mistersmee:mistersmee.ee`. It's a single-user homeserver, so don't try to join it, please. I'll look at the sizes of my git repos, photos and documents and re-evaluate my decision to not host Immich, Forgejo and Nextcloud, next.
