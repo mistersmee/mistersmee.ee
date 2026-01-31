@@ -13,7 +13,7 @@ Wolfgang from Wolfgang's Channel, I've taken more of an inspiration from, *clear
 - [Microbin](https://microbin.mistersmee.ee), a pastebin.
 - [SearxNG](https://searx.mistersmee.ee), a metasearch engine.
 - A WireGuard tunnel, effectively making it a self-hosted private VPN I can use.
-- A Matrix homeserver, using Conduit, at [matrix.mistersmee.ee](matrix.mistersmee.ee). It's single-user, only for me, so don't try to join, please.
+- A Matrix homeserver, using Conduit, at `matrix.mistersmee.ee`. It's single-user, only for me, so don't try to join, please.
 - A coturn server, for Matrix and other services, probably.
 
 
